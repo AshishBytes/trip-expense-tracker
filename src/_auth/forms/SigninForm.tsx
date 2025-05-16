@@ -53,8 +53,8 @@ const SigninForm = () => {
 
   const handleDemoLogin = () => {
     const demoCredentials = {
-      email: "pawan@gmail.com",
-      password: "pawan123",
+      email: "ashish@gmail.com",
+      password: "ashish123",
     };
     handleSignin(demoCredentials);
   };
