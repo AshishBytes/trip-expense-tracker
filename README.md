@@ -1,5 +1,7 @@
 # Trip-expense-tracker
-
+The Trip Expense Tracker allows users to manage and split expenses among group 
+members during a trip. It enables users to create groups, add friends, record shared 
+expenses, and settle debts efficiently.
 ### 📊 **Database Design**
 
 ![DataBase Design 1](https://github.com/user-attachments/assets/26d84039-10e9-4d9b-b04d-442017fbcb80)
