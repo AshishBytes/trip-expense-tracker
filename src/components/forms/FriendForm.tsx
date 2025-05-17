@@ -39,7 +39,7 @@ const FriendForm = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const friendUserList = ["yogesh21", "pawan21", "nayan21", "john21"];
+  const friendUserList = ["avishi", "anushka429", "anushka", "mohini", "ananya"];
 
   useEffect(() => {
     const fetchFriendSuggestions = async () => {

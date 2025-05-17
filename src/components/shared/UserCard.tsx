@@ -64,7 +64,7 @@ const UserCard: React.FC<UserCardProps> = ({
 
   const generateUPILink = () => {
     // Replace these values with your actual payment details
-    const payeeVPA = "nayanbarhate739-1@oksbi";
+    const payeeVPA = "ashishlodhi5559-1@oksbi";
     const transactionAmount = "1";
     // Construct the UPI link
     const upiLink = `upi://pay?pa=${payeeVPA}&pn=%20&tr=%20&am=${transactionAmount}&cu=INR`;
