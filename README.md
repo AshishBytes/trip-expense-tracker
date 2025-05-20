@@ -1,4 +1,4 @@
-# Trip-expense-tracker
+# Trip-expense-tracker aka TripLedger
 
 ### 📊 **Database Design**
 
