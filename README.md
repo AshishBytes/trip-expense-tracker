@@ -1,4 +1,7 @@
 # Trip-expense-tracker aka TripLedger
+The Trip Expense Tracker allows users to manage and split expenses among group 
+members during a trip. It enables users to create groups, add friends, record shared 
+expenses, and settle debts efficiently.
 
 ### 📊 **Database Design**
 
