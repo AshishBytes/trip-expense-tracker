@@ -57,13 +57,13 @@ const GroupActivity = ({ activity }: UserCardProps) => {
   if (isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
     const getback = parseFloat(activity.Amout) - individualAmount;
-    amountMessage = `You get back $${getback.toFixed(2)}`;
+    amountMessage = `You get back ₹${getback.toFixed(2)}`;
   } else if (isPaidByCurrentUser && !isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout);
-    amountMessage = `You get back $${individualAmount.toFixed(2)}`;
+    amountMessage = `You get back ₹${individualAmount.toFixed(2)}`;
   } else if (!isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
-    amountMessage = `You owe $${individualAmount.toFixed(2)}`;
+    amountMessage = `You owe ₹${individualAmount.toFixed(2)}`;
   } else {
     amountMessage = `Not involved`;
   }
@@ -86,9 +86,8 @@ const GroupActivity = ({ activity }: UserCardProps) => {
       <p>
         Added by{" "}
         <span
-          className={`font-semibold capitalize ${
-            isPaidByCurrentUser ? "text-green-500 " : "text-teal-400"
-          }`}>
+          className={`font-semibold capitalize ${isPaidByCurrentUser ? "text-green-500 " : "text-teal-400"
+            }`}>
           "{activity.PaidBy.name}"
         </span>{" "}
         Split in{" "}
@@ -105,13 +104,12 @@ const GroupActivity = ({ activity }: UserCardProps) => {
         </span>{" "}
       </p>
       <p
-        className={`${
-          isPaidByCurrentUser
-            ? "text-green-500 font-semibold"
-            : !isPaidByCurrentUser && isCurrentUserInvolved
-              ? "text-red font-semibold"
-              : "text-indigo-700 font-semibold"
-        }`}>
+        className={`${isPaidByCurrentUser
+          ? "text-green-500 font-semibold"
+          : !isPaidByCurrentUser && isCurrentUserInvolved
+            ? "text-red font-semibold"
+            : "text-indigo-700 font-semibold"
+          }`}>
         {amountMessage}
         <Button
           onClick={toggleModal}

@@ -131,9 +131,8 @@ const GroupDetails = () => {
           <Loader />
         ) : (
           <div
-            className={`bg-slate-800 p-4 shadow-md rounded-md text-white  ${
-              isBlurred ? "blurred2" : ""
-            }`}>
+            className={`bg-slate-800 p-4 shadow-md rounded-md text-white  ${isBlurred ? "blurred2" : ""
+              }`}>
             <h2 className="text-lg font-bold mb-2  text-gray-400 inline ">
               Group :{" "}
               <span className="font-mono text-blue-400">
@@ -163,7 +162,7 @@ const GroupDetails = () => {
                   style={{ paddingBottom: "5px" }}>
                   Expenses :{" "}
                   <span className="font-bold text-green-400">
-                    ${totalAmount.toFixed(2)}
+                    ₹{totalAmount.toFixed(2)}
                   </span>
                 </p>
               </div>
@@ -244,21 +243,19 @@ const GroupDetails = () => {
                       <>
                         <p className="">
                           <span
-                            className={`text-lg font-bold inline ${
-                              user?.name === item.from
+                            className={`text-lg font-bold inline ${user?.name === item.from
                                 ? "text-sky-300"
                                 : "text-neutral-400"
-                            }`}>
+                              }`}>
                             {" "}
                             "{item.from}"
                           </span>{" "}
                           owes{" "}
                           <span
-                            className={`text-lg font-bold inline ${
-                              user?.name === item.to
+                            className={`text-lg font-bold inline ${user?.name === item.to
                                 ? "text-indigo-300"
                                 : "text-neutral-400"
-                            }`}>
+                              }`}>
                             "{item.to}"{" "}
                           </span>{" "}
                           <span className="text-lg font-bold text-red ">

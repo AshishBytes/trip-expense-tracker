@@ -22,13 +22,13 @@ const ActivityCard = ({ activity }: UserCardProps) => {
   if (isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
     const getback = parseFloat(activity.Amout) - individualAmount;
-    amountMessage = `You get back $${getback.toFixed(2)}`;
+    amountMessage = `You get back ₹${getback.toFixed(2)}`;
   } else if (isPaidByCurrentUser && !isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout);
-    amountMessage = `You get back $${individualAmount.toFixed(2)}`;
+    amountMessage = `You get back ₹${individualAmount.toFixed(2)}`;
   } else if (!isPaidByCurrentUser && isCurrentUserInvolved) {
     const individualAmount = parseFloat(activity.Amout) / splitCount;
-    amountMessage = `You owe $${individualAmount.toFixed(2)}`;
+    amountMessage = `You owe ₹${individualAmount.toFixed(2)}`;
   } else {
     amountMessage = `Not involved`;
   }
@@ -48,9 +48,8 @@ const ActivityCard = ({ activity }: UserCardProps) => {
       <p>
         Added by{" "}
         <span
-          className={`font-semibold capitalize ${
-            isPaidByCurrentUser ? "text-green-500 capitalize" : "capitalize"
-          }`}>
+          className={`font-semibold capitalize ${isPaidByCurrentUser ? "text-green-500 capitalize" : "capitalize"
+            }`}>
           "{activity.PaidBy.name}"
         </span>{" "}
         in{" "}
@@ -62,13 +61,12 @@ const ActivityCard = ({ activity }: UserCardProps) => {
         <DateDisplay dateTimeString={activity.Time} />
       </p>
       <p
-        className={`${
-          isPaidByCurrentUser
-            ? "text-green-500 font-semibold capitalize"
-            : !isPaidByCurrentUser && isCurrentUserInvolved
-              ? "text-red font-semibold capitalize"
-              : "text-indigo-700 font-semibold capitalize"
-        }`}>
+        className={`${isPaidByCurrentUser
+          ? "text-green-500 font-semibold capitalize"
+          : !isPaidByCurrentUser && isCurrentUserInvolved
+            ? "text-red font-semibold capitalize"
+            : "text-indigo-700 font-semibold capitalize"
+          }`}>
         {amountMessage}
       </p>
     </>
