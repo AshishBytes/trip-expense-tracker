@@ -27,7 +27,7 @@ const LeftSidebar = () => {
     <nav className="leftsidebar">
       <div className="flex flex-col gap-11">
         <Link to="/" className="text-white font-bold text-lg flex items-center">
-          <span role="img" aria-label="Splitwise App" className="mr-1">
+          <span role="img" aria-label="TripLedger App" className="mr-1">
             <img
               width="35"
               height="35"

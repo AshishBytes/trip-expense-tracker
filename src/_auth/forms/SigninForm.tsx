@@ -65,7 +65,7 @@ const SigninForm = () => {
         <div className="text-white font-bold text-lg flex items-center justify-center">
           <span
             role="img"
-            aria-label="Splitwise App"
+            aria-label="TripLedger App"
             className="mr-3 p-2 mt-1 items-center">
             <img
               width="40"
@@ -74,7 +74,7 @@ const SigninForm = () => {
               alt="cash-in-hand"
             />
           </span>
-          Splitwise
+          TripLedger
         </div>
       </div>
 

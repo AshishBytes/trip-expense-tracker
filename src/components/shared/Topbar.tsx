@@ -8,7 +8,7 @@ const Topbar = () => {
           <Link
             to="/"
             className="text-white font-bold text-lg flex items-center">
-            <span role="img" aria-label="Splitwise App" className="mr-1 pr-2">
+            <span role="img" aria-label="TripLedger App" className="mr-1 pr-2">
               <img
                 width="40"
                 height="40"
@@ -16,7 +16,7 @@ const Topbar = () => {
                 alt="cash-in-hand"
               />
             </span>
-            Splitwise
+            TripLedger
           </Link>
         </div>
       </nav>
