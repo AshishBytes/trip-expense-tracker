@@ -35,7 +35,7 @@ const LeftSidebar = () => {
               alt="cash-in-hand"
             />
           </span>
-          SpendShare
+          TripLedger
         </Link>
         <ul className="flex flex-col gap-4">
           {sidebarLinks.map((link: INavLink) => {
