@@ -61,8 +61,8 @@ const SigninForm = () => {
 
   return (
     <Form {...form}>
-      <div className="bg-gray-800 h-16 fixed top-0 w-full z-10">
-        <div className="text-white font-bold text-lg flex items-center justify-center">
+      <div className="bg-pastel-blue h-16 fixed top-0 w-full z-10 rounded-b-lg shadow">
+        <div className="text-gray-800 font-bold text-lg flex items-center justify-center">
           <span
             role="img"
             aria-label="TripLedger App"
@@ -78,7 +78,7 @@ const SigninForm = () => {
         </div>
       </div>
 
-      <div className="sm:w-420 flex-center flex-col">
+      <div className="sm:w-420 flex-center flex-col bg-pastel-green rounded-xl shadow p-6 border border-pastel-blue">
         <h3 style={{ color: "#1CC29F" }} className="text-2xl font-bold">
           Login
         </h3>

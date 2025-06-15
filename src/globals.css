@@ -11,13 +11,13 @@
   }
 
   body {
-    background: #485563;
+    background: #faf5ff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #29323c, #485563);
+    background: -webkit-linear-gradient(to bottom, #faf5ff, #e0f2fe);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #29323c, #485563);
+    background: linear-gradient(to bottom, #faf5ff, #e0f2fe);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    color: #333;
     min-height: 80vh;
     font-family: 'Inter', sans-serif;
   }
@@ -199,7 +199,7 @@
 
   /* Bottom bar */
   .bottom-bar {
-    @apply z-50 flex-between w-full sticky bottom-0 rounded-t-[20px] bg-gray-800 px-5 py-4 md:hidden;
+    @apply z-50 flex-between w-full sticky bottom-0 rounded-t-[20px] bg-pastel-blue px-5 py-4 md:hidden shadow;
   }
 
   /* File uploader */
@@ -230,7 +230,7 @@
 
   /* Left sidebar */
   .leftsidebar {
-    @apply hidden md:flex px-5 py-10 flex-col justify-between min-w-[220px] bg-gray-800;
+    @apply hidden md:flex px-5 py-10 flex-col justify-between min-w-[220px] bg-pastel-blue rounded-r-xl shadow;
   }
 
   .leftsidebar-link:hover {

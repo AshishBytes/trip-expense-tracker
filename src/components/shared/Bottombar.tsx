@@ -6,7 +6,7 @@ const Bottombar = () => {
   const { pathname } = useLocation();
 
   return (
-    <section className="bottom-bar">
+    <section className="bottom-bar text-gray-800 shadow">
       {bottombarLinks.map((link) => {
         const isActive = pathname === link.route;
         return (
@@ -24,7 +24,7 @@ const Bottombar = () => {
               height={25}
               className={`${isActive && "invert-white"}`}
             />
-            <p className="font-semibold text-light-2">{link.label}</p>
+            <p className="font-semibold">{link.label}</p>
           </Link>
         );
       })}

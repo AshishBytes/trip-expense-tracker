@@ -24,9 +24,9 @@ const LeftSidebar = () => {
   };
 
   return (
-    <nav className="leftsidebar">
+    <nav className="leftsidebar text-gray-800">
       <div className="flex flex-col gap-11">
-        <Link to="/" className="text-white font-bold text-lg flex items-center">
+        <Link to="/" className="font-bold text-lg flex items-center">
           <span role="img" aria-label="TripLedger App" className="mr-1">
             <img
               width="35"
@@ -48,7 +48,7 @@ const LeftSidebar = () => {
                 style={isActive ? { backgroundColor: "#1CC29F" } : {}}>
                 <NavLink
                   to={link.route}
-                  className="flex gap-1 items-center p-1">
+                  className="flex gap-1 items-center p-1 text-gray-800">
                   <img
                     src={link.imgURL}
                     alt={link.label}
@@ -74,7 +74,7 @@ const LeftSidebar = () => {
           src="https://img.icons8.com/sf-black/64/FA5252/logout-rounded-left.png"
           alt="logout-rounded-left"
         />
-        <p className="small-medium lg:base-medium">Logout</p>
+        <p className="small-medium lg:base-medium text-gray-800">Logout</p>
       </Button>
     </nav>
   );

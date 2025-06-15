@@ -33,6 +33,11 @@ module.exports = {
         "light-2": "#EFEFEF",
         "light-3": "#7878A3",
         "light-4": "#5C5C7B",
+        "pastel-blue": "#a7c7e7",
+        "pastel-green": "#c5e5cf",
+        "pastel-pink": "#ffd1dc",
+        "pastel-yellow": "#faf3a0",
+        "pastel-purple": "#dec9e9",
       },
       screens: {
         xs: "480px",
