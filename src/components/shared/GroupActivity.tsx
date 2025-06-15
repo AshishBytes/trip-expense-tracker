@@ -142,7 +142,7 @@ const GroupActivity = ({ activity }: UserCardProps) => {
               If deleted, the expense will be permanently removed.
             </p>
             <Button className="btn bg-red hover:bg-red" onClick={toggleModal}>
-              Cancle
+              Cancel
             </Button>
             <Button className="btn m-2 bg-green-600" onClick={handleDelete}>
               Confirm
