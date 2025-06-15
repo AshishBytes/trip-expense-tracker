@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "@/components/shared";
 
 const Topbar = () => {
   return (
     <section className="topbar">
       <nav className="bg-gray-800 p-4">
-        <div className="container font-sans mx-auto flex justify-evenly items-center pe-8">
+        <div className="container font-sans mx-auto flex justify-between items-center pe-8">
           <Link
             to="/"
             className="text-white font-bold text-lg flex items-center">
@@ -18,6 +19,7 @@ const Topbar = () => {
             </span>
             TripLedger
           </Link>
+          <ThemeToggle />
         </div>
       </nav>
     </section>
