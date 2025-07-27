@@ -1,5 +1,6 @@
 import { Models } from "appwrite";
 import { Loader, PostCard } from "@/components/shared";
+import PageHead from "@/components/shared/PageHead";
 import { useNavigate } from "react-router-dom";
 import { useGetCurrentUser } from "@/lib/react-query/queries";
 
@@ -28,8 +29,10 @@ const Home = () => {
     );
   }
   return (
-    <div className="common-container">
-      <div className="user-container">
+    <>
+      <PageHead title="Home" description="Manage your trip groups" />
+      <div className="common-container">
+        <div className="user-container">
         <div className="container p-5 flex flex-col">
           <h2 className="text-white text-2xl font-bold mb-6">
             Groups
@@ -65,6 +68,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
