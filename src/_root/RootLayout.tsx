@@ -7,9 +7,10 @@ import LeftSidebar from "@/components/shared/LeftSidebar";
 const RootLayout = () => {
   return (
     <div className="w-full md:flex">
+      <a href="#main" className="sr-only focus:not-sr-only">Skip to main content</a>
       <Topbar />
       <LeftSidebar />
-      <section className="flex flex-1 h-full">
+      <section id="main" className="flex flex-1 h-full">
         <Outlet />
       </section>
       <Bottombar />
